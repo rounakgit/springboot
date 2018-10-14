@@ -1,6 +1,6 @@
 node  {
 stage('Git Checkout'){
-git 'https://github.com/rounakgit/CICD_AUTOMATION'
+git 'https://github.com/rounakgit/springboot'
 }
 
 stage ('junit test')
