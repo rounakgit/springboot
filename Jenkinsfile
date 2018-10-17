@@ -11,5 +11,11 @@ stage('Complete BUILD')
 {
 bat 'mvn package'
 }
-
+stage ('Docker Image build')
+       {
+       }
+stage ('Docker Image Deploy') 
+  {
+    
+  } 
 }
