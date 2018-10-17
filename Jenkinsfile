@@ -11,6 +11,10 @@ stage('Complete BUILD')
 {
 bat 'mvn package'
 }
+       stage ('Clone repo')
+       {
+        checkout scm      
+       }
 stage ('Docker Image build')
        {
        }
