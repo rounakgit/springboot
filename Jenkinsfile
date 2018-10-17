@@ -17,6 +17,7 @@ bat 'mvn package'
        }
 stage ('Docker Image build')
        {
+              app = docker.build("anjan57/springboot") 
        }
 stage ('Docker Image Deploy') 
   {
