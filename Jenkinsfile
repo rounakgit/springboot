@@ -11,13 +11,13 @@ stage('Complete BUILD')
 {
 bat 'mvn package'
 }
-       stage ('Clone repo')
-       {
+stage ('Clone repo')
+{
         checkout scm      
-       }
+ }
 stage ('Docker Image build')
        {
-              app = docker.build("rounakgit/springboot") 
+bat 'c:\Application_Testing_data\Buildimage.bat' 
        }
 stage ('Docker Image Deploy') 
   {
