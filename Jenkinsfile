@@ -18,7 +18,7 @@ checkout scm
         
 stage('Builddddd') {
 
-sh 'docker build --pull -t anjan57/firstapp:latest .'
+sh "docker build --pull -t anjan57/firstapp:latest ."
 
     }
             
