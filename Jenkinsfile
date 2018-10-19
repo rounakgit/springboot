@@ -16,12 +16,9 @@ stage ('Clone repo')
         checkout scm      
  }
         
- agent any
-    stages {
-        stage('Builddddd') {
+stage('Builddddd') {
             steps {
                 sh 'docker build --pull -t anjan57/firstapp:lts .'
-            }
         }
     }
             
