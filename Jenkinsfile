@@ -1,6 +1,6 @@
 node  {
-agent any       
-stages {        
+      
+        
 stage('Git Checkout'){
 git 'https://github.com/rounakgit/springboot'
 }
@@ -28,4 +28,4 @@ stage ('Docker Image Deploy')
     
   } 
 }
-}
+
