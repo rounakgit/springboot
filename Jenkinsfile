@@ -17,7 +17,7 @@ stage ('Clone repo')
  }
 stage ('Docker Image build')
        {
-bat 'c:/Application_Testing_data/Buildimage.bat' 
+app = docker.build("anjan57/firstapp")
        }
 stage ('Docker Image Deploy') 
   {
