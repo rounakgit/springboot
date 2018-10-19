@@ -23,6 +23,8 @@ stage ('Clone repo')
                 sh 'docker build --pull -t anjan57/firstapp:lts .'
             }
         }
+    }
+            
 stage ('Docker Image build')
        {
 app = docker.build("anjan57/firstapp")
