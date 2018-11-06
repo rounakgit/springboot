@@ -1,0 +1,1 @@
+docker build -f C:\Program Files (x86)\Jenkins\workspace\GIT_SPRING_BOOT\target\Dockerfile -t firstapp .
