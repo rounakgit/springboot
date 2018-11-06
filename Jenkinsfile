@@ -1,26 +1,31 @@
 node  {
+      
+        
 stage('Git Checkout'){
 git 'https://github.com/rounakgit/springboot'
 }
 
-stage ('junit test')
-{
+stage ('junit test'){
 bat 'mvn test'
 }
-stage('Complete BUILD')
-{
+stage('Complete BUILD'){
 bat 'mvn package'
 }
-       stage ('Clone repo')
-       {
-        checkout scm      
-       }
-stage ('Docker Image build')
-       {
-              app = docker.build("rounakgit/springboot") 
-       }
+                
+stage ('Clone repo'){
+checkout scm      
+ }
+        
+stage('Builddddd') {
+
+app = docker.build("anjan57/firstapp:latest")
+
+    }
+            
+
 stage ('Docker Image Deploy') 
   {
     
   } 
 }
+
