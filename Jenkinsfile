@@ -16,12 +16,16 @@ stage ('Clone repo'){
 checkout scm      
  }
         
-stage('Builddddd') {
+stage('Build image') {
 
 app = docker.build("anjan57/firstapp:latest")
 
     }
+      stage('Test Image') {
             
+            app.inside{
+            sh 'echo "anjan"'
+            }
 
 stage ('Docker Image Deploy') 
   {
